@@ -12,12 +12,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/login' element={<Login />} />
-          <Route element={<ProtectedRoute />}>
             <Route path='/' element={<Home />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/profile/:id' element={<Profile />} />
             <Route path='/friends' element={<FindFriends />} />
-          </Route>
 
         </Routes>
       </BrowserRouter>
